@@ -4,24 +4,26 @@ jQuery(document).on 'turbolinks:load', ->
     messages_to_bottom = -> messages.scrollTop(messages.prop("scrollHeight"))
 
     messages_to_bottom()
-    
-App.global_chat = App.cable.subscriptions.create {
-    channel: "ChatRoomsChannel"
-    chat_room_id: messages.data('chat-room-id')
-  },
-  connected: ->
-    # Called when the subscription is ready for use on the server
 
-  disconnected: ->
-    # Called when the subscription has been terminated by the server
+    App.global_chat = App.cable.subscriptions.create {
+        channel: "ChatRoomsChannel"
+        chat_room_id: messages.data('chat-room-id')
+      },
+      connected: ->
+        # Called when the subscription is ready for use on the server
 
-  received: (data) ->
-    messages.append data['message']
+      disconnected: ->
+        # Called when the subscription has been terminated by the server
 
-  send_message: (message, chat_room_id) ->
-    @perform 'send_message', message: message, chat_room_id: chat_room_id
+      received: (data) ->
+        messages.append data['message']
+        messages_to_bottom()
 
- $('#new_message').submit (e) ->
+      send_message: (message, chat_room_id) ->
+        @perform 'send_message', message: message, chat_room_id: chat_room_id
+
+
+    $('#new_message').submit (e) ->
       $this = $(this)
       textarea = $this.find('#message_body')
       if $.trim(textarea.val()).length > 1
