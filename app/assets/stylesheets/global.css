@@ -38,7 +38,7 @@ a {
     border:1px solid #ACD8F0; }
 
 
-#chatbox {
+#messages {
     text-align:left;
     margin:0 auto;
     margin-bottom:25px;
@@ -47,7 +47,8 @@ a {
     height:270px;
     width:430px;
     border:1px solid #ACD8F0;
-    overflow:auto; }
+    overflow:auto;
+  }
 
 .form-control {
     width:395px;

@@ -8,10 +8,8 @@
     </div>
 
 
-<div id="chatbox">
 <div id="messages" data-chat-room-id="<%= @chat_room.id %>">
   <%= render @chat_room.messages %>
-</div>
 </div>
   <div>
      <%= form_for @message, url: '#' do |f| %>
