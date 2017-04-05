@@ -10,7 +10,6 @@ class ChatRoomsController < ApplicationController
   def create
     @chat_room = current_user.chat_rooms.build(chat_room_params)
     if @chat_room.save
-      flash[:success] = 'Chat room added!'
       redirect_to chat_rooms_path
     else
       render 'new'
@@ -29,10 +28,10 @@ class ChatRoomsController < ApplicationController
   end
 end
 
-#create back buttons to return to lobby from room
 #css chat rooms
 #css specific txt vs date
 #back to chat room button
 #css main page
+#add useful links
 #add list of chat rooms add to seed, and delete add room button
 #host to heroku
