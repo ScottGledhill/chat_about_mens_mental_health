@@ -30,7 +30,6 @@ end
 
 #css chat rooms
 #css specific txt vs date
-#back to chat room button
 #css main page
 #add useful links
 #add list of chat rooms add to seed, and delete add room button

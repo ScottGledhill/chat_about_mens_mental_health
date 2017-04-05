@@ -20,3 +20,16 @@ h1 {
 footer {
   margin-top: 50px;
 }
+
+.form-group {
+    display: flex;
+    width:100%;
+}
+
+.devised {
+  font-size: 20px;
+  color: #E75480;
+  position:fixed;
+  top:14%;
+  left:43%;
+}
