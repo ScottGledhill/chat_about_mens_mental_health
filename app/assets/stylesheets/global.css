@@ -3,7 +3,6 @@ html, body {
     background-color: #fff9e6;
 }
 
-
 .devised {
   font-size: 20px;
   color: #E75480;
@@ -23,7 +22,7 @@ form, p, span {
     margin:0;
     padding:0; }
 
-input { font:12px arial; }
+input { font:12px Big Caslon; }
 
 a {
     color:#0000FF;
@@ -38,9 +37,6 @@ a {
     width:504px;
     border:1px solid #ACD8F0; }
 
-#loginform { padding-top:18px; }
-
-    #loginform p { margin: 5px; }
 
 #chatbox {
     text-align:left;
@@ -53,7 +49,7 @@ a {
     border:1px solid #ACD8F0;
     overflow:auto; }
 
-#usermsg {
+.form-control {
     width:395px;
     border:1px solid #ACD8F0; }
 
