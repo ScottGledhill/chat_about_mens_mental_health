@@ -28,9 +28,8 @@ class ChatRoomsController < ApplicationController
   end
 end
 
-#css chat rooms
 #css specific txt vs date
-#css main page
 #add useful links
+#be able to post by pressing enter, remove post button
 #add list of chat rooms add to seed, and delete add room button
 #host to heroku
