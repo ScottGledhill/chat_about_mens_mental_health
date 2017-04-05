@@ -29,7 +29,7 @@ class ChatRoomsController < ApplicationController
   end
 end
 
-#add username and change view to use username
+#create back buttons to return to lobby from room
 #css chat rooms
 #css specific txt vs date
 #back to chat room button
