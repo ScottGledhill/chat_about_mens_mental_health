@@ -28,3 +28,11 @@ class ChatRoomsController < ApplicationController
     params.require(:chat_room).permit(:title)
   end
 end
+
+#add username and change view to use username
+#css chat rooms
+#css specific txt vs date
+#back to chat room button
+#css main page
+#add list of chat rooms add to seed, and delete add room button
+#host to heroku
