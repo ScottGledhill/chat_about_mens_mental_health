@@ -28,7 +28,6 @@ class ChatRoomsController < ApplicationController
   end
 end
 
-#add useful links
-#be able to post by pressing enter, remove post button
+#add useful links to index, move to left add banners for the links on right
 #add list of chat rooms add to seed, and delete add room button
 #host to heroku

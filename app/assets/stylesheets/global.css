@@ -67,6 +67,9 @@ a {
 .msgln { margin:0 0 2px 0; }
 
 .text-muted {
-  color: #3399ff
+  color: #3399ff;
+}
 
+:links {
+  color: pink;
 }
