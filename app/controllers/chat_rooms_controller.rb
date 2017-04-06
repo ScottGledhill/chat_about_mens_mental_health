@@ -28,7 +28,6 @@ class ChatRoomsController < ApplicationController
   end
 end
 
-#css specific txt vs date
 #add useful links
 #be able to post by pressing enter, remove post button
 #add list of chat rooms add to seed, and delete add room button
