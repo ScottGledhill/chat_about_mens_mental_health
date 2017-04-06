@@ -65,3 +65,8 @@ a {
 .logout { float:right; }
 
 .msgln { margin:0 0 2px 0; }
+
+.text-muted {
+  color: #3399ff
+
+}
