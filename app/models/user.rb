@@ -8,7 +8,7 @@ class User < ApplicationRecord
          validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
 
   def name
-    username
+    username.capitalize
   end
 
   def self.find_for_database_authentication warden_conditions
